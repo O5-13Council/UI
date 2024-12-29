@@ -50,16 +50,16 @@
       }
       #loading-logo {
         position: absolute;
-        top: calc(50vh - 100px);
-        left: calc(50vh - 100px);
-        width: 200px;
-        height: 200px;
+        top: calc(50vh - 50px);
+        left: calc(50vh - 50px);
+        width: 100px;
+        height: 100px;
       }
     </style>
     
     <div id="loading">
       <image src="/Assets/images/logo/loading.png" id="loading-logo"></image>
-      <a style="position: absolute; top: calc(50vh + 105px); left: calc(50vh - 80px);">Loading...</a>
+      <h1 style="position: absolute; top: calc(50vh + 55px); left: calc(50vh - 60px);">Loading...</h1>
       <script>
         setTimeout(() => {
           document.getElementById("loading").style.display = "none";
