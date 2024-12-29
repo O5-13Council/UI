@@ -52,16 +52,18 @@
         position: absolute;
         top: calc(50vh - 100px);
         left: calc(50vh - 100px);
+        width: 200px;
+        height: 200px;
       }
     </style>
     
     <div id="loading">
-      <image src="/Assests/images/logo/loading.png" id="loading-logo"></image>
+      <image src="/Assets/images/logo/loading.png" id="loading-logo"></image>
       <a style="position: absolute; top: calc(50vh + 105px); left: calc(50vh - 80px);">Loading...</a>
       <script>
         setTimeout(() => {
           document.getElementById("loading").style.display = "none";
-        }, 1000)
+        }, 2000)
       </script>
     </div>
   </body>
