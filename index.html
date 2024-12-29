@@ -8,7 +8,7 @@
   <body>
     <div id="top-bar">
       <image src="/Assets/images/logo/light.png" style="width: 100px; height: 100px;"></image>
-      <h1 style="position: absolute; top: 20px; left: 110px;">Unknown</h1>
+      <h1 style="position: absolute; top: 15px; left: 110px;">Unknown</h1>
     </div>
     <div id="body">
       <a>Welcome To Unknown.</a>
@@ -40,6 +40,29 @@
         border: solid 2px white;
         background-color: black;
       }
+      #loading {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+      }
+      #loading-logo {
+        position: absolute;
+        top: calc(50vh - 100px);
+        left: calc(50vh - 100px);
+      }
     </style>
+    
+    <div id="loading">
+      <image src="/Assests/images/logo/loading.png" id="loading-logo"></image>
+      <a style="position: absolute; top: calc(50vh + 105px); left: calc(50vh - 80px);">Loading...</a>
+      <script>
+        setTimeout(() => {
+          document.getElementById("loading").style.display = "none";
+        }, 1000)
+      </script>
+    </div>
   </body>
 </html>
